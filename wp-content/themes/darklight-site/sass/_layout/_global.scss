@@ -3,9 +3,50 @@
 }
 
 html {
-  font-size: 62.5%
+  font-size: 62.5%;
+  background-color: #212121;
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 body {
   @include font-size(1.8);
+  font-family: helvetica;
+  background: #212121;
+  width: 96%;
+  margin: auto;
+}
+
+.banner {
+  background: #ffffff;
+}
+
+.body {
+  background: white;
+}
+
+.head {
+  text-align: center;
+  padding-top: 10px;
+
+}
+p {
+  @include font-size(2);
+}
+
+li {
+  display:inline;
+}
+
+.header__link-item {
+  margin: 10px;
+  color: black;
+  padding-top: 5px;
+  @include font-size(3);
+}
+
+.head a:hover {
+  color: #d3d3d3;
 }
