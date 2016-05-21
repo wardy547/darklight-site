@@ -3,9 +3,49 @@
 }
 
 html {
-  font-size: 62.5%
+  font-size: 62.5%;
+  background-color: white;
 }
+
 
 body {
   @include font-size(1.8);
+  font-family: helvetica;
+  background: white;
+  margin: auto;
+  border: 20px solid #212121;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.banner {
+  background: #ffffff;
+}
+
+
+p {
+  @include font-size(2);
+}
+
+li {
+  display:inline;
+}
+
+.page-header {
+  text-align: center;
+  padding-top: 10px;
+  line-height: 1.8;
+
+&__link-item {
+  margin: 10px;
+  color: black;
+  padding-top: 5px;
+  @include font-size(3);
+}
+
+a:hover {
+  color: #d3d3d3;
+}
 }

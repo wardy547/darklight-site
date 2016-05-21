@@ -1,0 +1,80 @@
+/* ----------------------
+
+  LANES grid framework
+  ====================
+
+  Default usage
+  =============
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+      </div>
+      <div class="col-6">
+      </div>
+    </div>
+  </div>
+
+-----------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1240px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+[class^="col-"] {
+  flex-flow: column;
+}
+.col-1 {
+  width: 6.95%;
+}
+.col-2 {
+  width: 15.41%;
+}
+.col-3 {
+  width: 23.87%;
+}
+.col-4 {
+  width: 32.33%;
+}
+.col-5 {
+  width: 40.79%;
+}
+.col-6 {
+  width: 49.25%;
+}
+.col-7 {
+  width: 57.70%;
+}
+.col-8 {
+  width: 66.16%;
+}
+.col-9 {
+  width: 74.62%;
+}
+.col-10 {
+  width: 83.08%;
+}
+.col-11 {
+  width: 91.54%;
+}
+.col-12 {
+  width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  [class^="col-"] {
+    width: 100%;
+  }
+}
